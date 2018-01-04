@@ -3,7 +3,7 @@
 }
 
 .zoomin-enter{
-    display: none;
+
 }
 
 .zoomin-enter img{
@@ -14,39 +14,13 @@
 
 }
 .zoomin-exit{
-    display: block;
+
 }
 
 .zoomin-exit.zoomin-exit-active img{
     -moz-transform: scale(1.6);
     -webkit-transform: scale(1.6);
     transform: scale(1.6);
-}
-
-
-.zoomout-enter{
-    display: none;
-}
-
-.zoomout-enter img{
-    -moz-transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-}
-
-.zoomout-enter.zoomout-enter-active img{
-    -moz-transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-}
-.zoomout-exit{
-    display: block;
-}
-
-.zoomout-exit.zoomin-exit-active img{
-    -moz-transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
 }
 
 .close, .hero-lablel{
