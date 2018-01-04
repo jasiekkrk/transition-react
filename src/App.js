@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <Route render={({ location }) =>
         <TransitionGroup>
-          <CSSTransition key={location.pathname.split('/')[1]} timeout={500} classNames="pageSlider" mountOnEnter={true} unmountOnExit={true}>
+          <CSSTransition key={location.pathname.split('/')[1]} timeout={300} classNames="pageSlider" mountOnEnter={true} unmountOnExit={true}>
             <Switch location={location}>
               <Route exact path="/" component={Home} />
               <Route exact path="/hero" component={Hero} />
