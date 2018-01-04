@@ -8,6 +8,11 @@
 .page {
     padding: 0 24px;
 }
+
+.hero div {
+    font-size: 5em;
+}
+
 .fade-enter {
   opacity: 0;
   z-index: 1;
