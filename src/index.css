@@ -5,11 +5,18 @@
 
 .page.hero main{
   padding: 0 15px;
-  position : relative;
+  position : absolute;
   color : white;
   text-shadow: -2px 2px 3px gray;
   transition: 0.2s;
-  left: 0;
+  left: 0px;
+  bottom: 10px;
+}
+
+.page.home main{
+  position : absolute;
+  left: 0px;
+  top: 300px;
 }
 
 .zoomin-enter {
@@ -20,6 +27,7 @@
     -moz-transform: scale(1.4);
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
+    animation: clipAnim 0.2s;
 }
 
 .zoomin-exit.zoomin-exit-active main{
@@ -35,6 +43,7 @@
     -moz-transform: scale(0.9);
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
+    animation: smallerAnim 0.2s;
 }
 
 .zoomout-exit.zoomout-exit-active main{
@@ -45,6 +54,7 @@
 {
   position: absolute;
   top : 50px;
+  left : 10px;
   color : white;
   background: black;
 }
@@ -54,20 +64,39 @@
     display: block;
     width: auto;
     height: auto;
-    max-width: 100%;
-    max-height: 90%;
     margin: 20px auto;
 }
 
 .small
 {
+  position: absolute;
     -moz-transform: scale(0.9);
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
+    clip: rect(10px, 290px, 190px, 10px);
+}
+
+@keyframes clipAnim {
+  from {
+    clip: rect(10px, 290px, 190px, 10px);
+  }
+  to {
+    clip: rect(0px, 314px, 547px, 0px);
+  }
+}
+
+@keyframes smallerAnim {
+  from {
+    clip: rect(0px, 314px, 547px, 0px);
+  }
+  to {
+    clip: rect(10px, 290px, 190px, 10px);
+  }
 }
 
 .large
 {
+     position: absolute;
     -moz-transform: scale(1.4);
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
