@@ -8,7 +8,7 @@
   position : relative;
   color : white;
   text-shadow: -2px 2px 3px gray;
-  transition: 0.1s;
+  transition: 0.2s;
   left: 0;
 }
 
@@ -20,6 +20,10 @@
     -moz-transform: scale(1.4);
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
+}
+
+.zoomin-exit.zoomin-exit-active main{
+  visibility: hidden;
 }
 
 
@@ -69,7 +73,7 @@
 }
 
 img {
-    -moz-transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
 }
