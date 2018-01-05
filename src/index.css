@@ -16,7 +16,7 @@
 }
 
 .zoomin-enter.zoomin-enter-active img{
-  display: block;
+ 
 }
 .zoomin-exit{
 
@@ -27,6 +27,11 @@
     -webkit-transform: scale(1.6);
     transform: scale(1.6);
 }
+
+.zoomin-exit.zoomin-exit-active main{
+  display: none;
+}
+
 .close
 {
   position: absolute;
