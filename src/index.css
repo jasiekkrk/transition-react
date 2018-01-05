@@ -18,7 +18,7 @@
 
 .zoomin-exit.zoomin-exit-active .wrapper-small{
   max-width: 100%;
-  transition: max-width 0.1s ease-in;
+  transition: max-width 0.1s ease-out, max-height 0.1s ease-out;
 }
 
 .zoomout-enter{
@@ -49,6 +49,19 @@
   max-height : 300px;
   overflow: hidden;
 }
+
+.wrapper-large img{
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+.wrapper-small img{
+  position: relative;
+  top:-34px;
+  left:-34px;
+}
+
 
 .wrapper-large{
   position: fixed;
