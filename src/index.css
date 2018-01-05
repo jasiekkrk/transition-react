@@ -5,6 +5,7 @@
 .page.hero h1{
   padding: 0 24px;
   position : relative;
+  color : white;
 }
 
 .zoomin-enter {
@@ -40,7 +41,9 @@
 {
   position: absolute;
   top : 50px;
+  color : white;
 }
+
 .articleHero
 {
     display: block;
