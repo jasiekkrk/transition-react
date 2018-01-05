@@ -8,17 +8,23 @@
   position : absolute;
   color : white;
   text-shadow: -2px 2px 3px gray;
-  transition: 0.1s;
-  bottom: 10px;
+  transition: all 0.1s;
+  bottom: -10px;
 }
 
 .zoomin-enter {
  display: none;
 }
 
+.zoomin-enter.zoomin-enter-active .page.hero main{
+    bottom: -1000px;
+}
+
 .zoomin-exit.zoomin-exit-active .wrapper-small{
   max-width: 100%;
-  transition: all linear 0.1s;
+  max-height: 100%;
+  padding: 0px;
+  transition: all linear 0.2s;
 }
 
 .zoomout-enter{
@@ -29,7 +35,7 @@
   max-width: 300px;
   max-height: 300px;
   padding: 24px;
-  transition: all linear 0.1s;
+  transition: all linear 0.2s;
 }
 
 .zoomout-exit.zoomout-exit-active main{

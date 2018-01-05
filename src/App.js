@@ -6,8 +6,8 @@ import Hero from "./Hero";
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
 const transitionMapping = {
-  '': { classNames: 'zoomin', timeout: 100 },
-  hero: { classNames: 'zoomout', timeout: 100 },
+  '': { classNames: 'zoomin', timeout: 200 },
+  hero: { classNames: 'zoomout', timeout: 200 },
 };
 
 class App extends Component {
