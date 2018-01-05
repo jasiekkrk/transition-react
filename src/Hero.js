@@ -10,7 +10,7 @@ export default class Hero extends Component {
    <main>
     <h1>Lost in krakow</h1>
     <Link to="/" className='close'>X</Link>
-    <p>By Andrzej Jasiński</p>
+    <p>By John</p>
     </main>
    </div>  
 
