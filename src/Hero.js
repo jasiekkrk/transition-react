@@ -7,9 +7,11 @@ export default class Hero extends Component {
     <div className="page hero">
    Shared by you
    <img className = "articleHero large" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Krak%C3%B3w_239a.jpg"/>
-   <h1>Lost in krakow</h1>
-   <Link to="/zoom" className='close'>X</Link>
-   <p>By Andrzej Jasiński</p>
+   <main>
+    <h1>Lost in krakow</h1>
+    <Link to="/" className='close'>X</Link>
+    <p>By Andrzej Jasiński</p>
+    </main>
    </div>  
 
   )

@@ -6,8 +6,8 @@ import Hero from "./Hero";
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
 const transitionMapping = {
-  zoom: { classNames: 'zoomin', timeout: 0 },
-  hero: { classNames: 'zoomout', timeout: 0 },
+  '': { classNames: 'zoomin', timeout: 300 },
+  hero: { classNames: 'zoomout', timeout: 300 },
 };
 
 class App extends Component {
@@ -18,9 +18,9 @@ class App extends Component {
          {
           const current = location.pathname.split('/')[1];
            return <TransitionGroup>
-          <CSSTransition key={location.pathname.split('/')[1]} timeout={300}  classNames='zoomin' mountOnEnter={true} unmountOnExit={true}>
+          <CSSTransition key={location.pathname.split('/')[1]} {...transitionMapping[current]} mountOnEnter={true} unmountOnExit={true}>
             <Switch location={location}>
-              <Route exact path="/zoom" component={Home} />
+              <Route exact path="/" component={Home} />
               <Route exact path="/hero" component={Hero} />
             </Switch>
           </CSSTransition>
