@@ -6,7 +6,7 @@ export default class Hero extends Component {
   return (
     <div className="page hero">
    Shared by you
-   <img className = "articleHero large" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Krak%C3%B3w_239a.jpg"/>
+   <img className = "articleHero large" src={require("./lksdv.jpg")}/>
    <main>
     <h1>Lost in krakow</h1>
     <Link to="/" className='close'>X</Link>
