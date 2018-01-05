@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 
-.page.hero h1{
+.page.hero main{
   padding: 0 15px;
   position : relative;
   color : white;
