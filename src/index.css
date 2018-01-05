@@ -22,24 +22,6 @@
     transform: scale(1.6);
 }
 
-.zoomin-enter h1 {
-  transform: translate3d(100%, 0, 0);
-}
-
-.zoomin-enter.zoomin-enter-active h1{
-  transform: translate3d(0, 0, 0);
-  transition: all 600ms;
-}
-.zoomin-exit h1{
-  transform: translate3d(0, 0, 0);
-}
-
-.zoomin-exit.zoomin-exit-active h1{
-  transform: translate3d(-100%, 0, 0);
-  transition: all 600ms;
-}
-
-
 .zoomout-enter{
   display: none;
 }
@@ -63,13 +45,23 @@
 
 .articleHero
 {
-    display: block;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 90%;
-    margin: 20px auto;
+  overflow: hidden;
+  margin: 0px auto;
+  display: block;
 }
+.articleHero.large
+{
+
+  width: 70%;
+  height: 300px;
+
+  }
+  .articleHero.small
+  {
+      width: 70%;
+      height: 200px;
+  }
+
 
 .small
 {
