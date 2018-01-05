@@ -7,7 +7,7 @@ export default class Hero extends Component {
     <div className="page hero">
    Shared by you
    <div className="wrapper-large">
-        <img className = "articleHero large" src={require("./lksdv.jpg")}/>
+        <img className = "large" src={require("./lksdv.jpg")}/>
    </div>
    <Link to="/" className='close'>X</Link>
    <main>

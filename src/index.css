@@ -1,5 +1,5 @@
 .page {
-    padding: 0 24px;
+  padding: 24px;
     overflow-x: hidden;
 }
 
@@ -18,7 +18,7 @@
 
 .zoomin-exit.zoomin-exit-active .wrapper-small{
   max-width: 100%;
-  transition: max-width 0.1s ease-out, max-height 0.1s ease-out;
+  transition: all linear 0.1s;
 }
 
 .zoomout-enter{
@@ -28,7 +28,8 @@
 .zoomout-exit.zoomout-exit-active .wrapper-large{
   max-width: 300px;
   max-height: 300px;
-  transition: max-width 0.1s ease-out, max-height 0.1s ease-out;
+  padding: 24px;
+  transition: all linear 0.1s;
 }
 
 .zoomout-exit.zoomout-exit-active main{
@@ -48,6 +49,7 @@
   max-width : 300px;
   max-height : 300px;
   overflow: hidden;
+  position: fixed;
 }
 
 .wrapper-large img{
@@ -61,7 +63,10 @@
   top:-34px;
   left:-34px;
 }
-
+.articleHome main{
+  top: 350px;
+  position:fixed;
+}
 
 .wrapper-large{
   position: fixed;
